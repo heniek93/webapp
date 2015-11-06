@@ -1,0 +1,345 @@
+body,button,input {
+	
+	font: 100% 'Helvetica Neue', sans-serif;
+	font-weight: 300;
+	
+}
+
+body {
+	background: #000;
+	margin: 0;
+}
+
+input {
+	border: 0;
+	border-radius: 0.1em;
+	background: rgba(255,255,255,0.2);
+	color: #fff;
+	padding: 0.2em 0.5em;
+	font-size: 1em;
+}
+
+button {
+	background: rgba(255,255,255,0.2);
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+	font-size: 0.8em;
+	padding: 0.2em 1.5em;
+	margin: 0.2em;
+	border-radius: 0.2em;
+}
+
+button:hover {
+	background: rgba(255,255,255,0.25);
+}
+
+button:active {
+	background: rgba(255,255,255,0.15);
+}
+
+#background {
+	background: #000 url(../images/background.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: all 0.25s ease-out;
+}
+
+body.signedIn #background {
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(10px);
+}
+
+.inv {
+	display: none;
+}
+
+#wrapper {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#menu {
+	padding: 0;
+	margin: 0;
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+
+#menu li {
+	background: rgba(0,0,0,0.2);
+	display: inline-block;
+	border: 2px solid rgba(0,0,0,0.1);
+	border-radius: 0.3em;
+	font-size: 0.8em;
+	color: #fff;
+	text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+	padding: 0.3em 1em;
+	margin-left: 0.3em;
+	vertical-align: middle;
+	cursor: pointer;
+	text-align: center;
+}
+
+#menu li.active {
+	background: rgba(0,0,0,0.5);
+	border-color: #06c;
+}
+
+#container {
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+	margin-right: 320px;
+	padding: 20px;
+}
+
+#user {
+	width: 200px;
+	color: #fff;
+	text-shadow: 0px 1px 5px rgba(0,0,0,0.5);
+	background: rgba(0,0,0,0.6);
+	border: 3px solid rgba(0,0,0,0.5);
+	border-radius: 0.2em;
+	position: fixed;
+	/* margin-left: 920px; */
+	top: 50px;
+	margin-left: 500px;
+	text-align: center;
+}
+
+#user button {
+	margin-top: 0.5em;
+}
+
+#user input {
+	text-align: center;
+}
+
+
+
+::-webkit-input-placeholder {
+   color: #ccc;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #ccc;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #ccc; 
+}
+
+:-ms-input-placeholder {  
+   color: #ccc; 
+}
+
+#user div.data {
+	background: rgba(0,0,0,0.5);
+}
+
+#user div.data span {
+	display: block;
+}
+
+#user div.data span.name {
+	font-size: 1.5em;
+}
+
+#user > div {
+	padding: 0.5em 0;
+}
+
+#user div.zones ul, #user div.zones li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+#user div.zones li {
+	cursor: pointer;
+	font-size: 1em;
+	/* width: 150px; */
+}
+
+#user div.zones li > span.name {
+	background: rgba(255,255,255,0.1);
+	border: 2px solid transparent; 
+	border-radius: 0.2em;
+	display: block;
+	width: 80%;
+	padding: 0.2em 0;
+}
+
+#user div.zones > ul > li {
+	margin-bottom: 0.7em;
+}
+
+	#user div.zones li li {
+		font-size: 0.9em;
+	}
+
+	#user div.zones li > span.name:hover {
+		background: rgba(255,255,255,0.2);
+	}
+
+	#user div.zones li[data-active='1'] > span.name {
+		background: rgba(0,0,0,0.5);
+		border-color: #06c;
+	}
+
+#user div.zones li span.name {
+	display: inline-block;
+}
+
+#user div.zones li span.name {
+	
+}
+
+#user div.signIn {
+	text-align: center;
+}
+
+#user div.signIn input {
+	
+}
+
+#reportsZones span.count {
+	background: #000;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+border-radius: 3px;
+font-size: 0.8em;
+padding: 0.2em 0.5em;
+text-align: center;
+margin: 0 0.5em;
+}
+
+#reportsZones span.count.active {
+	background: #06c;
+}
+
+#reports > div {
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0.5em;
+	width: 50%;
+	height: 100%;
+}
+
+#reports > div:first-of-type {
+	border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+#zones input {
+	font-size: inherit;
+}
+
+#zones ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#zones ul ul {
+	padding-left: 30px;
+}
+
+#zones ul span.name {
+	display: inline-block;
+	width: 500px;
+}
+
+#reportsZones ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#reportsZones ul.children {
+	padding-left: 30px;
+}
+
+#reportsZones ul.users {
+	padding-left: 10px;
+}
+
+#reportsZones ul li {
+	background: rgba(255,255,255,0.1);
+	padding: 0.2em;
+	margin: 0.5em 0;
+	border-radius: 0.2em;
+}
+
+#reports label {
+	display: inline-block;
+	width: 100px;
+}
+
+#reports h1 {
+	font-weight: 300;
+	font-size: 1.4em;
+	margin-top: 0;
+}
+
+#reports input {
+	width: 100px;
+	text-align: center;
+}
+
+#reportsZones .users {
+	font-size: 0.8em;
+}
+
+#reportsUsers .totalTime {
+	background: rgba(255,255,255,0.2);
+	border-radius: 0.2em;
+	display: inline-block;
+	padding: 0.3em;
+}
+
+table.events {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table.events th {
+	padding: 0.3em 1em;
+	text-align: center;
+	border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+
+table.events .zoneName {
+	text-align: left;
+}
+
+table.events td {
+	padding: 0.3em 1em;
+	text-align: center;
+	border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+table.events tr.odd td {
+	background: rgba(255,255,255,0.1);
+}
+
+table.events td:last-child {
+	border-right: 0;
+}
+
+table.events tr:last-child td {
+	border-bottom: 0;
+}
