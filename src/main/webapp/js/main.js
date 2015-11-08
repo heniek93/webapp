@@ -107,7 +107,7 @@ var user = {
 			if (ajx.status == "OK") {
 				user.signedIn();
 			} else if (ajx.status == "AccDen") {
-				alert("Niepoprawny e-mail lub hasło.");
+				alert("Nieprawidłowy email lub hasło");
 			}
 		});
 	},

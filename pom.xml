@@ -35,7 +35,7 @@
         <configuration>
           <!--<path>/</path>-->
           <server>tomcat7</server>
-          <url>http://skinp.tk:8080/manager/text</url>
+          <url>http://localhost:8080/manager/text</url>
         </configuration>
       </plugin>
     </plugins>
